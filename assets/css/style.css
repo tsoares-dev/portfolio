@@ -57,7 +57,8 @@
 /*------------------------------*\
   #RESET DE FORMATAÇÕES
 \*------------------------------*/
-*, *::before, *::after{
+*, *::before, 
+*::after{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -71,11 +72,11 @@ a{
   color: inherit;
 }
 
-a, img, span, input, strong, button, textarea, ion-icon{
+a, img, span, input, strong, button, textarea, ion-icon {
   display: block;
 }
 
-img{
+img {
   height: auto;
 }
 ion-icon{
@@ -113,7 +114,8 @@ body{
 :focus-visible{
   outline-offset: 4px;
 }
-::-webkit-scrollbar{
+::-webkit-scrollbar{   /* :: herança */
+
   width: 15px;
 }
 ::-webkit-scrollbar-track {
@@ -203,12 +205,13 @@ body{
   transition: 0.25s var(--cubic-out);
   z-index: 4;
 }
-.header .nav-active{
+.header.nav-active{
   height: 335px;
   transition-duration: 0.35s;
 }
 
 .header > .container{
+  /* > referencia somente ao container (primeira que achar) */
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -223,11 +226,13 @@ body{
   font-size: 3rem;
 }
 
-.nav-toggle-btn.active .close-icon, .nav-toggle-btn .menu-icon{
+.nav-toggle-btn .close-icon,
+.nav-toggle-btn.active .menu-icon {
   display: none;
 }
 
-.nav-toggle-btn.active .close-icon, .nav-toggle-btn .menu-icon{
+.nav-toggle-btn.active .close-icon,
+.nav-toggle-btn .menu-icon {
   display: block;
 }
 
@@ -242,7 +247,7 @@ body{
   transition: var(--transition-2);
 }
 
-.header .nav-active .navbar{
+.header.nav-active .navbar{
   visibility: visible;
   opacity: 1;
 }
