@@ -269,10 +269,11 @@ body{
 /*------------------------------*\
   #HERO
 \*------------------------------*/
-.elem, .rotate-img{
+.elem, 
+.rotate-img {
   display: none;
 }
-.hero{
+.hero {
   background-image: url("../images/hero-bg.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -757,14 +758,24 @@ textarea.contact-input{
     right: -80px;
   }
   .elem-2 .elem-title {
-    color: ;
+    color: var(--vivid-sky-blue);
   }
   .elem-title {
+    font-size: 4.5rem;
+    line-height: 1.1;
+    /* max-width: 10ch;
+    color: var(--black);
+    font-weight: var(--fw-700);
+    line-height: 1.1; */
+  }
+
+  .elem-text {
     max-width: 10ch;
     color: var(--black);
     font-weight: var(--fw-700);
     line-height: 1.1;
   }
+  
   .elem-3 {
     top: -40px;
     right: -30px;
