@@ -413,10 +413,12 @@ body{
   align-items: center;
   margin-block-end: 10px;
 }
-.skills-title, .skills-data{
-  background-color: var(--orange-soda);
-  height: 8px;
-  border-radius: var(--radius-10)
+.skills-title, 
+.skills-data {
+  color: var(--white);
+  font-size: var(--fs-5);
+  font-family: var(--ff-barlow);
+  font-weight: var(--fw-600);
 }
 .skills-progress-box {
   background-color: var(--white);
@@ -426,7 +428,7 @@ body{
 .skills-progress {
   background-color: var(--orange-soda);
   height: 100%;
-  border-radius: inherit
+  border-radius: inherit;
 }
 
 /*-----------------------------------*\
